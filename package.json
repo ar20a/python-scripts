@@ -1,0 +1,17 @@
+{
+  "name": "defi-analysis-tools",
+  "version": "1.0.0",
+  "description": "A collection of Python scripts for DeFi analysis",
+  "scripts": {
+    "install-deps": "pip install -r requirements.txt"
+  },
+  "dependencies": {
+    "python-packages": [
+      "numpy",
+      "matplotlib",
+      "scipy",
+      "web3",
+      "requests"
+    ]
+  }
+}
