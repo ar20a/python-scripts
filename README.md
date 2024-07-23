@@ -26,16 +26,19 @@ This repository contains python utility scripts to be built upon
 	Alternatively, if you have npm installed, you can use:
 	
 	npm run install-deps
+
+
 	
 ## Usage
 
-### 1. Liquity Position Info
+### 1. Liquity liquidation bot
 
-This script fetches and displays Liquity protocol position details for a given Ethereum address.
-
+The bot continuously checks the Liquity protocol for the trove with the lowest collateral ratio and attempts to liquidate it if it falls below the 110% threshold. It's designed to run indefinitely on a PC, automatically executing liquidations when conditions are met.
+- Replace `YOUR_INFURA_PROJECT_ID` with your Infura project ID
+- Replace `YOUR_ETHEREUM_ADDRESS` with your Ethereum address
+- Replace `YOUR_PRIVATE_KEY` with your Ethereum private key
 Run the script: python liquity_position_info.py
 
-You will be prompted to enter an Ethereum address. The script will then display information about the address's Trove, Stability Pool deposit, and LQTY stake.
 
 ### 2. DeFi Strategy Comparison
 
